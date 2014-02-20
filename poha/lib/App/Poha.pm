@@ -10,8 +10,6 @@ sub startup {
       $self->render( text => 'Hello Poha banane wali!' );
     }
   );
-
-  #$self->routes->get('/')->to('foo#hello');
 }
 
 1;
