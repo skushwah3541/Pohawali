@@ -1,4 +1,4 @@
-package App::Poha;
+package PohaApp;
 
 use Mojo::Base 'Mojolicious';
 
