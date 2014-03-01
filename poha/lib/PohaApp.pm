@@ -1,15 +1,13 @@
 package PohaApp;
 
 use Mojo::Base 'Mojolicious';
+use PohaApp::Controller;
 
 sub startup {
   my $self = shift;
-  $self->routes->route('/')->to(
-    cb => sub {
-      my $self = shift;
-      $self->render( text => 'Hello Poha banane wali!' );
-    }
-  );
+  my $r    = $self->routes->route('/');
+  $r->namespaces( [qw(PohaApp::Controller)] );
+  PohaApp::Controller->setup_routes($r);  
 }
 
 1;

@@ -1,1 +1,4 @@
-app: www.pohawali.com
+db:
+  dsn: dbi:mysql:database=Poha;host=localhost
+  user: user
+  password: password
