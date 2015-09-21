@@ -15,6 +15,14 @@ sub startup {
   # Switch to installable "templates" directory
   $self->renderer->paths->[0] = $self->home->rel_dir('Web/Templates');
   
+    $self->static->paths(
+    [
+      '/home/sandeep/bootstrap-3.2.0-dist',
+      '/home/sandeep/git/poha/poha/lib/Web',
+    ]
+  );
+  
+  
   
   PohaApp::Controller->setup_routes($r);
 }

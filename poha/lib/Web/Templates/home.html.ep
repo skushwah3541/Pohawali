@@ -1,0 +1,5 @@
+% layout 'default';
+% title "Pratima's-Kitchen";
+<br/>
+<br/>
+<h1><%= $message %></h1>
