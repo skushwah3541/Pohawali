@@ -1,4 +1,4 @@
 db:
   dsn: dbi:mysql:database=Poha;host=localhost
-  user: user
-  password: password
+  user: service
+  password: sandkush
